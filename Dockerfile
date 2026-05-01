@@ -33,7 +33,7 @@ COPY package*.json ./
 RUN npm install --omit=dev
 
 # Copy production server script
-COPY server-prod.js ./
+COPY server-prod.mjs ./
 
 # Copy built application from builder stage
 COPY --from=builder /app/dist ./dist
@@ -50,4 +50,4 @@ ENV NODE_ENV=production
 ENV PORT=4200
 
 # Start application
-CMD ["node", "server-prod.js"]
+CMD ["node", "server-prod.mjs"]

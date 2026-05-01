@@ -21,7 +21,7 @@ app.use(compression());
 app.use(
   '/assets',
   express.static(join(__dirname, 'dist/server96-landing/browser/assets'), {
-    maxAge: '1y', // Cache assets (they have hash in filename)
+    maxAge: '1y',
     immutable: true
   })
 );
@@ -29,9 +29,8 @@ app.use(
 // Serve other static files
 app.use(
   express.static(join(__dirname, 'dist/server96-landing/browser'), {
-    maxAge: '1d', // Cache static files for 1 day
+    maxAge: '1d',
     setHeaders: (res, path) => {
-      // Don't cache HTML files
       if (path.endsWith('.html')) {
         res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
       }
@@ -39,7 +38,6 @@ app.use(
   })
 );
 
-// SSR handler
 import('./dist/server96-landing/server/main.server.mjs').then((module) => {
   const { default: render } = module;
 
