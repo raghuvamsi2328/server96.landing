@@ -3,6 +3,9 @@ FROM node:22-alpine AS builder
 
 WORKDIR /app
 
+# Use the same npm version declared in package.json for reproducible ci installs.
+RUN npm install -g npm@10.9.4
+
 # Copy package files
 COPY package*.json ./
 
@@ -20,14 +23,14 @@ FROM node:22-alpine
 
 WORKDIR /app
 
-# Install compression for production server
-RUN npm install -g compression
+# Use the same npm version declared in package.json for reproducible ci installs.
+RUN npm install -g npm@10.9.4
 
 # Copy package files
 COPY package*.json ./
 
 # Install production dependencies only
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 # Copy production server script
 COPY server-prod.js ./
