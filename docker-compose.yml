@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  server96-landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: server96-landing
+    ports:
+      - "1996:4200"
+    environment:
+      - NODE_ENV=production
+      - PORT=4200
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:4200', (r) => {if (r.statusCode !== 200) throw new Error(r.statusCode)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    # Resource limits (optional, adjust as needed)
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 1G
+        reservations:
+          cpus: '1'
+          memory: 512M
+    # Logging configuration
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    # Volumes for logs (optional)
+    volumes:
+      - ./logs:/app/logs
