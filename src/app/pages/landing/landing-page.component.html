@@ -1,0 +1,167 @@
+<main class="page-shell">
+  <app-header [navItems]="navItems"></app-header>
+
+  <div class="content-container">
+    <section class="hero content-bleed">
+      <p class="eyebrow">{{ content.hero.eyebrow }}</p>
+      <h1>
+        {{ content.hero.titleLines[0] }} <span class="accent-arrow">&#8594;</span>
+        {{ content.hero.titleLines[1].split(' ')[0] }}<br />
+        <span class="accent-arrow">&#8594;</span>
+        {{ content.hero.titleLines[1].split(' ')[1] }} <span class="accent-star">&#10033;</span>
+        {{ content.hero.highlightWord }}
+      </h1>
+
+      <div class="hero-cards">
+        <article class="mini-card">
+          <h2>{{ content.metrics[0].value }}</h2>
+          <p>{{ content.metrics[0].detail }}</p>
+        </article>
+
+        <article class="mini-card actions-card">
+          <p>{{ content.hero.subtitle }}</p>
+          <div class="actions">
+            <a class="primary" [routerLink]="'/contact-us'">{{ content.hero.primaryAction }}</a>
+            <a class="ghost" [routerLink]="'/work'">{{ content.hero.secondaryAction }}</a>
+          </div>
+        </article>
+
+        <article class="mini-card services-chip-card">
+          <p class="label">{{ content.sectionLabels.services }}</p>
+          <div class="chips">
+            @for (service of content.services; track service.name) {
+              <span>{{ service.name }}</span>
+            }
+          </div>
+        </article>
+
+        <article class="mini-card secondary-metric-card">
+          <h2>{{ content.metrics[2].value }}</h2>
+          <p>{{ content.metrics[2].detail }}</p>
+        </article>
+
+        <article class="mini-card team-card">
+          <h2>{{ content.metrics[1].value }}</h2>
+          <p>{{ content.metrics[1].detail }}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="specialize content-bleed">
+      <div class="service-stack">
+        @for (service of content.services; track service.name) {
+          <article>
+            <p class="service-name">{{ service.name }}</p>
+            <p>{{ service.description }}</p>
+          </article>
+        }
+      </div>
+
+      <div class="specialize-copy">
+        <h2>
+          Specialize<br />in providing<br />top <span class="accent-arrow">&#8594;</span> notch<br />
+          services
+        </h2>
+
+        <div class="specialize-visual" aria-hidden="true">
+          <div class="orb"></div>
+          <p>Creative systems designed for clarity, speed, and measurable growth.</p>
+          <span>Server96 Studio</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="why-choose content-bleed">
+      <article class="why-intro">
+        <p class="eyebrow">See how we works</p>
+        <h2>{{ content.sectionLabels.whyChoose | uppercase }}</h2>
+        <p>
+          Our team of creative minds is dedicated to delivering unique and visually stunning
+          solutions tailored to meet your specific needs.
+        </p>
+        <a [routerLink]="'/contact-us'">Get Started</a>
+      </article>
+
+      <div class="why-list">
+        @for (item of content.whyChooseItems; track item.title) {
+          <article>
+            <h3><span>&#8594;</span> {{ item.title }}</h3>
+            <p>{{ item.description }}</p>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="works content-bleed">
+      <div class="works-head">
+        <div>
+          <p class="eyebrow">See Our Portfolio Reels</p>
+          <h2>{{ content.sectionLabels.works | uppercase }}</h2>
+        </div>
+        <a [routerLink]="'/work'">Get Started</a>
+      </div>
+
+      <div class="portfolio-grid" aria-label="Portfolio highlights">
+        @for (item of content.portfolio; track item.name) {
+          <article>
+            <div class="thumb"></div>
+            <h3>{{ item.name }}</h3>
+            <p class="category">{{ item.category }}</p>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="testimonials content-bleed" aria-label="Testimonials">
+      <div class="testimonial-head">
+        <p class="eyebrow">See from our client</p>
+        <h2>
+          {{ content.sectionLabels.testimonials.split(' ').slice(0, 2).join(' ') }}
+          <span class="accent-arrow">&#8594;</span>
+          {{ content.sectionLabels.testimonials.split(' ').slice(2).join(' ') }}
+        </h2>
+      </div>
+
+      <div class="testimonial-list">
+        @for (item of content.testimonials; track item.author) {
+          <article>
+            <p class="quote">{{ item.quote }}</p>
+            <p class="author">{{ item.author }}</p>
+            <p class="role">{{ item.role }}</p>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section class="cta content-bleed">
+      <h2>
+        <span class="accent-arrow">&#8594;</span> Create <span class="accent-star">&#10033;</span> new<br />
+        innovation <span class="accent-arrow">&#8594;</span> together
+      </h2>
+      <div class="cta-row">
+        <p>{{ content.cta.description }}</p>
+        <a [routerLink]="'/contact-us'">{{ content.cta.actionText }} <span>&#8594;</span></a>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer full-bleed footer-bleed">
+    <section>
+      <p class="brand">Server<span>96</span></p>
+      <p>{{ content.footer.brandLine }}</p>
+      <p>{{ content.footer.phone }}</p>
+      <p>{{ content.footer.email }}</p>
+    </section>
+
+    @for (group of content.footer.groups; track group.title) {
+      <section>
+        <h3>{{ group.title }}</h3>
+        <ul>
+          @for (link of group.links; track link) {
+            <li><a [routerLink]="routeForFooterLink(link)">{{ link }}</a></li>
+          }
+        </ul>
+      </section>
+    }
+  </footer>
+</main>

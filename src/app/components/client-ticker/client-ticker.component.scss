@@ -1,0 +1,48 @@
+.ticker {
+  border: 1px solid var(--line-color);
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  background: linear-gradient(120deg, #fffaf6 0%, #fff 50%, #f4f8ff 100%);
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: var(--accent-color);
+}
+
+.card {
+  margin-top: 0.75rem;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.12rem;
+}
+
+.card p {
+  margin: 0.45rem 0 0;
+  color: #525d72;
+  max-width: 42ch;
+}
+
+.dots {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: 0.9rem;
+}
+
+.dots span {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background-color: #cfd6e6;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.dots span.active {
+  background-color: var(--accent-color);
+  transform: scale(1.12);
+}

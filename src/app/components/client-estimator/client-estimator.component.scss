@@ -1,0 +1,57 @@
+.estimator {
+  border: 1px solid var(--line-color);
+  border-radius: 1.5rem;
+  padding: 1.2rem;
+  background-color: #101826;
+  color: #f7f8fc;
+}
+
+.kicker {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.72rem;
+  color: #ff9d57;
+}
+
+h3 {
+  margin: 0.5rem 0 0.9rem;
+  font-size: 1.2rem;
+}
+
+label {
+  display: block;
+  color: #d1d7e8;
+  font-size: 0.95rem;
+}
+
+input[type='range'] {
+  width: 100%;
+  margin-top: 0.65rem;
+  accent-color: #ff7a2f;
+}
+
+.results {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.results article {
+  border-radius: 1rem;
+  padding: 0.7rem 0.8rem;
+  background-color: #1b273b;
+}
+
+.results p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #b8c4dc;
+}
+
+.results strong {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 1.1rem;
+}

@@ -1,0 +1,55 @@
+<main class="page-shell">
+  <app-header [navItems]="navItems"></app-header>
+
+  <section class="hero full-bleed">
+    <div class="inner">
+      <p class="eyebrow">{{ page().eyebrow }}</p>
+      <h1>{{ page().title }}</h1>
+      <p class="subtitle">{{ page().subtitle }}</p>
+
+      <div class="highlight-chips">
+        @for (item of page().highlights; track item) {
+          <span>{{ item }}</span>
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="content full-bleed">
+    <div class="inner grid">
+      @for (block of page().sections; track block.heading) {
+        <article>
+          <h2>{{ block.heading }}</h2>
+          <p>{{ block.body }}</p>
+        </article>
+      }
+    </div>
+  </section>
+
+  <section class="cta full-bleed">
+    <div class="inner cta-row">
+      <h2>Build Your Next Milestone With Server96</h2>
+      <a [routerLink]="'/contact-us'">Start a conversation</a>
+    </div>
+  </section>
+
+  <footer class="footer full-bleed footer-bleed">
+    <section>
+      <p class="brand">Server<span>96</span></p>
+      <p>{{ footer.brandLine }}</p>
+      <p>{{ footer.phone }}</p>
+      <p>{{ footer.email }}</p>
+    </section>
+
+    @for (group of footer.groups; track group.title) {
+      <section>
+        <h3>{{ group.title }}</h3>
+        <ul>
+          @for (link of group.links; track link) {
+            <li><a [routerLink]="routeForFooterLink(link)">{{ link }}</a></li>
+          }
+        </ul>
+      </section>
+    }
+  </footer>
+</main>

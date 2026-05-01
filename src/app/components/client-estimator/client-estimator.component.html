@@ -1,0 +1,24 @@
+<section class="estimator" aria-label="Project estimator">
+  <h3>Scope Planner</h3>
+
+  <label for="scope">Project scope level: {{ scopeMultiplier }}</label>
+  <input
+    id="scope"
+    type="range"
+    [min]="config.minScope"
+    [max]="config.maxScope"
+    step="1"
+    [(ngModel)]="scopeMultiplier"
+  />
+
+  <div class="results">
+    <article>
+      <p>Estimated hours</p>
+      <strong>{{ estimatedHours }}</strong>
+    </article>
+    <article>
+      <p>Estimated budget</p>
+      <strong>${{ estimatedBudgetUsd | number: '1.0-0' }}</strong>
+    </article>
+  </div>
+</section>

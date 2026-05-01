@@ -1,0 +1,14 @@
+<section class="ticker" aria-live="polite">
+  @if (items.length > 0) {
+    <article class="card">
+      <h3>{{ items[activeIndex]?.title }}</h3>
+      <p>{{ items[activeIndex]?.message }}</p>
+    </article>
+
+    <div class="dots">
+      @for (item of items; track item.title; let i = $index) {
+        <span [class.active]="i === activeIndex" aria-hidden="true"></span>
+      }
+    </div>
+  }
+</section>
