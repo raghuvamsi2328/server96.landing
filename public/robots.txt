@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Optional: block internal/search pages if ever added
+# Disallow: /search
+# Disallow: /admin
+
+Sitemap: https://server96.com/sitemap.xml
