@@ -1,0 +1,5 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <text x="1" y="24" font-family="'Arial Black', Impact, sans-serif" font-size="22" font-weight="900" font-style="italic" fill="#1a1a1a" letter-spacing="-1">s</text>
+  <text x="11" y="24" font-family="'Arial Black', Impact, sans-serif" font-size="22" font-weight="900" font-style="italic" fill="#FF8C00" letter-spacing="-1">96</text>
+  <rect x="1" y="27" width="30" height="2.5" rx="1.2" fill="#FF8C00" opacity="0.8"/>
+</svg>

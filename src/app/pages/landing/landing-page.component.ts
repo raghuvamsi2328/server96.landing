@@ -20,10 +20,11 @@ export class LandingPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.seo.updateSeo({
-      title: 'Server96 - Digital Product & Design Studio',
+      title: 'Server96 - Web Engineering & Cloud Solutions',
       description:
-        'We are a creative digital team helping ambitious brands turn ideas into clean, high-performing digital experiences. Web design, branding, motion graphics, and illustration.',
-      keywords: 'web design, digital studio, branding, UI/UX, graphic design, motion graphics',
+        'Server96 delivers scalable web engineering and cloud solutions, from custom application architecture to reliable managed hosting and DevOps.',
+      keywords:
+        'web engineering, cloud solutions, managed hosting, full-stack development, Angular, Node.js, DevOps, scalable applications',
       image: '/og-image.png',
       url: 'https://server96.com'
     });
@@ -41,5 +42,19 @@ export class LandingPageComponent implements OnInit {
     };
 
     return map[link] ?? '/';
+  }
+
+  caseStudyUrl(name: string): string {
+    const map: Record<string, string> = {
+      'Knowabt.me': 'https://knowabt.me',
+      Linklocker: 'https://linklocker.server96.com'
+    };
+
+    return map[name] ?? '/work';
+  }
+
+  isExternalCaseStudy(name: string): boolean {
+    const url = this.caseStudyUrl(name);
+    return url.startsWith('http');
   }
 }

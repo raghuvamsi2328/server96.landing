@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 110" width="460" height="110" role="img" aria-label="Server96 - Web Development &amp; Cloud Services">
+  <!-- "server" bold italic dark -->
+  <text
+    x="10"
+    y="70"
+    font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
+    font-size="70"
+    font-weight="900"
+    font-style="italic"
+    fill="#1a1a1a"
+    letter-spacing="-3"
+  >server</text>
+  <!-- "96" bold italic orange -->
+  <text
+    x="258"
+    y="70"
+    font-family="'Arial Black', 'Franklin Gothic Heavy', Impact, sans-serif"
+    font-size="70"
+    font-weight="900"
+    font-style="italic"
+    fill="#FF8C00"
+    letter-spacing="-3"
+  >96</text>
+
+  <!-- orange accent bar -->
+  <rect x="10" y="83" width="48" height="4" rx="2" fill="#FF8C00"/>
+  <!-- grey separator bar -->
+  <rect x="64" y="83" width="72" height="4" rx="2" fill="#888"/>
+
+  <!-- tagline text -->
+  <text
+    x="142"
+    y="89"
+    font-family="'Arial', 'Helvetica Neue', sans-serif"
+    font-size="10.5"
+    font-weight="700"
+    fill="#777"
+    letter-spacing="1.6"
+  >WEB DEVELOPMENT &amp; CLOUD SERVICES</text>
+</svg>

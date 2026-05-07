@@ -14,97 +14,97 @@ export interface ClientPageContent {
 export const CLIENT_PAGES: Record<string, ClientPageContent> = {
   about: {
     title: 'About Server96',
-    eyebrow: 'Who we are',
+    eyebrow: 'Who We Are',
     subtitle:
-      'We partner with founders and product teams to build digital experiences that perform. Engineering, design, and strategy working in sync.',
-    highlights: ['Full-stack capabilities', 'Product-obsessed approach', 'Proven shipping discipline'],
+      'We are senior web engineers specializing in high-performance web applications and reliable hosting infrastructure. We build systems designed to scale.',
+    highlights: ['12+ years of expertise', 'Full-stack capabilities', 'Enterprise-grade infrastructure'],
     sections: [
       {
-        heading: 'Built on execution',
-        body: 'Server96 exists because great products need teams that can hold a vision end-to-end. We combine frontend, backend, and design—no handoffs, no gaps.'
+        heading: 'Founded on reliability',
+        body: 'Server96 exists because enterprises need partners who understand both frontend architecture and backend resilience. We combine Angular, TypeScript, Node.js, and .NET expertise with deep DevOps knowledge.'
       },
       {
         heading: 'How we operate',
-        body: 'Weekly sprints. Clear milestones. Real feedback loops. We build in public checkpoints so you understand progress and can adjust direction fast.'
+        body: 'Weekly sprints with transparent milestones. Real-time communication. Regular performance audits. We maintain your infrastructure as if it were our own—99.9% uptime is non-negotiable.'
       },
       {
         heading: 'What we optimize for',
-        body: 'Speed to market, long-term maintainability, and user outcomes. We ship code that ships reliably and scales with your team.'
+        body: 'Performance, security, and scalability. Every line of code is audited. Every infrastructure decision is made for long-term reliability. Your users deserve faster load times. Your business deserves uptime you can trust.'
       },
       {
         heading: 'Who we work with',
-        body: 'Seed-stage startups, scaling product teams, and established companies rethinking their technical foundations. If you care about quality and speed, we are a good fit.'
+        body: 'Growing SaaS companies, fintech platforms, and enterprises rethinking their technical stack. If you need engineering partners who take ownership, we are a fit.'
       }
     ]
   },
   work: {
-    title: 'Our Work',
-    eyebrow: 'Selected projects',
+    title: 'Technical Case Studies',
+    eyebrow: 'Projects We Have Shipped',
     subtitle:
-      'A sample of digital products and web experiences that improved performance, retention, and conversion. Focused on outcomes that matter.',
-    highlights: ['SaaS products', 'Fintech platforms', 'Marketing & commerce sites'],
+      'Real examples of high-performance web applications and hosting solutions we have engineered. Each project demonstrates scalability, security, and reliability.',
+    highlights: ['Custom hosting platforms', 'Real-time applications', 'High-concurrency systems'],
     sections: [
       {
-        heading: 'SaaS & product design',
-        body: 'End-to-end product builds: databases, APIs, real-time features, and dashboards. We structure products for growth from day one.'
+        heading: 'Knowabt.me: Automated Portfolio Hosting',
+        body: 'A custom hosting platform enabling GitHub-based portfolio deployments with automated subdomain provisioning. Built on Node.js and PostgreSQL with CI/CD pipelines for zero-downtime deployments.'
       },
       {
-        heading: 'Fintech & trading',
-        body: 'Secure, low-latency interfaces for financial platforms. Complex state management, high-frequency updates, and user trust built into every detail.'
+        heading: 'Chats96: Real-Time Communication',
+        body: 'A high-concurrency chat application built with .NET SignalR and PostgreSQL handling 10,000+ concurrent connections. Features include message persistence, room management, and real-time presence updates.'
       },
       {
-        heading: 'Web experiences',
-        body: 'High-converting marketing sites and web apps with fast Core Web Vitals, strong SEO, and clean handoff to teams who maintain them.'
+        heading: 'Linklocker: Offline-First PWA',
+        body: 'A self-hosted progressive web app for secure link management with end-to-end encryption, offline capability, and local data storage. Built with Angular for desktop and mobile.'
       },
       {
-        heading: 'Results',
-        body: 'Faster time to market. Reduced technical debt. Teams that can iterate confidently. Measurable improvements in engagement and conversion.'
+        heading: 'Results delivered',
+        body: 'Reduced infrastructure costs through optimization. Sub-second load times. Zero unplanned downtime. Systems our clients maintain with confidence and scale without rewriting.'
       }
     ]
   },
   pricing: {
-    title: 'Pricing',
-    eyebrow: 'How we engage',
+    title: 'Pricing Models',
+    eyebrow: 'How We Engage',
     subtitle:
-      'Flexible structures designed for transparency and alignment. Every engagement is scoped clearly, priced fairly, and focused on measurable outcomes.',
-    highlights: ['Fixed sprint rates', 'Outcome-based pricing', 'Flexible commitment models'],
+      'Flexible engagement structures built for transparency. Fixed rates, clear scopes, and measurable outcomes. No surprises.',
+    highlights: ['Sprint-based pricing', 'Retained partnerships', 'Infrastructure management'],
     sections: [
       {
-        heading: 'Sprint & scoped work',
-        body: 'For focused deliverables: landing redesigns, feature builds, or technical architecture. Fixed timeline, clear scope, full ownership.'
+        heading: 'Project-based work',
+        body: 'Custom web applications, hosting platform setup, or full-stack modernization. Fixed timeline, defined scope, complete ownership from architecture through launch.'
       },
       {
-        heading: 'Retained partnership',
-        body: 'Dedicated capacity for ongoing roadmap execution. One team, your priorities. Best for scaling startups that need consistent velocity.'
+        heading: 'Retained engineering partnership',
+        body: 'Dedicated capacity for your roadmap. One team, your priorities. Ideal for scaling companies that need consistent engineering velocity and infrastructure management.'
       },
       {
-        heading: 'Project delivery',
-        body: 'Full product builds from concept through launch. Strategy, design, engineering, and launch support in one aligned engagement.'
+        heading: 'Hosting & DevOps support',
+        body: 'Managed hosting, CI/CD pipeline setup, monitoring, and on-call support. We handle the infrastructure so your team focuses on product.'
       },
       {
         heading: 'Custom arrangements',
-        body: 'Revenue-share opportunities. Equity partnerships. Co-building models. If you have a compelling idea, let us talk about creative structures.'
+        body: 'Equity partnerships, revenue-share models, or co-building opportunities. If you have a compelling technical challenge, let us discuss creative structures.'
       }
     ]
   },
   'contact-us': {
-    title: 'Get in touch',
-    eyebrow: 'Let us know what you are building',
+    title: 'Consult An Engineer',
+    eyebrow: 'Tell Us About Your Project',
     subtitle:
-      "Send us a brief overview of your goals, timeline, and constraints. We'll respond within 48 hours with a realistic scope and next steps.",
-    highlights: ['Fast response', 'Honest feedback', 'No obligation'],
+      'Share your technical requirements, scaling challenges, or infrastructure concerns. We will provide honest feedback and a clear path forward within 48 hours.',
+    highlights: ['Fast response', 'Technical honesty', 'No fluff'],
     sections: [
       {
-        heading: 'Project inquiry',
-        body: 'Describe your vision, audience, and success metric. We will ask clarifying questions and propose the most efficient path forward.'
+        heading: 'Technical consultation',
+        body: 'Describe your architecture challenges, performance goals, or hosting needs. We will ask clarifying questions and propose the most efficient technical approach.'
       },
       {
-        heading: 'Collaboration format',
-        body: 'Interested in a retained partnership, co-building arrangement, or advisory role? We are open to exploring ways to work together.'
+        heading: 'Engineering partnership models',
+        body: 'Interested in project work, retained partnerships, or managed hosting? We are open to exploring engagement structures that align with your needs.'
       },
       {
         heading: 'Get started',
-        body: 'Email us at hello@server96.com with your project details, or book a brief conversation to discuss timing and approach.'
+        body: 'Email team@server96.com with your technical requirements and current tech stack. Include timeline and budget constraints so we can respond with realistic recommendations.'
       }
     ]
   },
@@ -135,51 +135,51 @@ export const CLIENT_PAGES: Record<string, ClientPageContent> = {
   },
   features: {
     title: 'Our Capabilities',
-    eyebrow: 'What we build',
+    eyebrow: 'What We Engineer',
     subtitle:
-      'A complete toolkit for digital product work: strategy, design systems, modern frontends, scalable backends, and deployment infrastructure.',
-    highlights: ['Product design', 'Modern stacks', 'Infrastructure & deployment'],
+      'A complete technical stack for enterprise web applications: modern frontends, scalable backends, hosting infrastructure, and DevOps automation. Built to perform.',
+    highlights: ['High-performance frontends', 'Scalable backends', 'Enterprise hosting'],
     sections: [
       {
-        heading: 'Frontend architecture',
-        body: 'React, Angular, Vue—frameworks chosen for your constraints. SSR for performance. Type-safe code. Design systems that ship fast.'
+        heading: 'Frontend engineering',
+        body: 'Angular with TypeScript. Server-side rendering for SEO and performance. Micro-frontends for large-scale applications. Design systems built for maintainability. Progressive web apps for offline capability.'
       },
       {
-        heading: 'Backend & APIs',
-        body: "Node.js, Python, Go. Databases from PostgreSQL to NoSQL. Real-time capabilities. Authentication and authorization patterns that scale."
+        heading: 'Backend & infrastructure',
+        body: 'Node.js and .NET backends. PostgreSQL and MongoDB for data persistence. Real-time capabilities with WebSockets and SignalR. REST and GraphQL APIs. Authentication, authorization, and security hardening.'
       },
       {
-        heading: 'Design systems',
-        body: 'Reusable component libraries. Token-driven styling. Clear patterns for consistency across products. Built for teams to maintain and extend.'
+        heading: 'Web hosting & DevOps',
+        body: 'Enterprise-grade hosting infrastructure. Docker containerization and Kubernetes orchestration. CI/CD pipelines for reliable deployments. Monitoring, logging, and alerting. 99.9% SLA guarantees.'
       },
       {
-        heading: 'DevOps & deployment',
-        body: 'CI/CD pipelines. Container orchestration. Observability and monitoring. Databases that perform. Infrastructure you can hand off confidently.'
+        heading: 'Performance optimization',
+        body: 'Core Web Vitals optimization. Database query optimization. Caching strategies. CDN integration. Load testing and performance audits. SEO and accessibility compliance.'
       }
     ]
   },
   community: {
-    title: 'Community',
-    eyebrow: 'Building together',
+    title: 'Engineering Community',
+    eyebrow: 'Join Our Community',
     subtitle:
-      'We share practical knowledge from product work. Breakdowns, walkthroughs, and collaborative sessions for founders and engineering teams.',
-    highlights: ['Product talks', 'Technical deep-dives', 'Open collaboration'],
+      'We share technical insights, infrastructure best practices, and lessons from scaling systems. For engineers and technical founders building the next generation of web applications.',
+    highlights: ['Technical talks', 'Architecture deep-dives', 'Infrastructure guidance'],
     sections: [
       {
-        heading: 'Knowledge sharing',
-        body: 'Real breakdowns of design and implementation decisions from projects we have shipped. Framework comparisons, performance optimizations, architecture patterns.'
+        heading: 'Technical knowledge sharing',
+        body: 'Real implementations from projects we have shipped. Angular patterns, Node.js best practices, .NET scaling strategies. Performance optimization techniques. Architecture decisions explained with trade-offs.'
       },
       {
-        heading: 'Open doors',
-        body: 'Founders and teams can reach out for advice on product direction, technical decisions, or fundraising strategy. We give candid feedback and practical guidance.'
+        heading: 'Infrastructure guidance',
+        body: 'Hosting decisions, DevOps automation, database scaling, security hardening. Technical founders and teams can reach out for architecture reviews and recommendations based on our experience.'
       },
       {
-        heading: 'Collaborative sessions',
-        body: 'Regular meetups and workshops focused on modern stack decisions, shipping discipline, and product outcomes. Peer learning for builders.'
+        heading: 'Community sessions',
+        body: 'Regular workshops on Angular, Node.js, .NET, Kubernetes, and PostgreSQL. Live coding sessions demonstrating real-world solutions. Q&A with our senior engineers. Peer learning for technical teams.'
       },
       {
-        heading: 'Resources',
-        body: 'Case studies, templates, and reference implementations that help you understand our approach and apply it to your own work.'
+        heading: 'Resources & case studies',
+        body: 'Architecture decision records, infrastructure templates, performance benchmarks, and reference implementations. Open-source tools we build for the community. Practical guides for modern web engineering.'
       }
     ]
   }

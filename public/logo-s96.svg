@@ -1,0 +1,23 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Black 's' -->
+  <text 
+    x="8" 
+    y="28" 
+    font-family="Arial, sans-serif" 
+    font-size="24" 
+    font-weight="bold" 
+    fill="#000000"
+    letter-spacing="0"
+  >s</text>
+  
+  <!-- Orange '96' -->
+  <text 
+    x="22" 
+    y="28" 
+    font-family="Arial, sans-serif" 
+    font-size="24" 
+    font-weight="bold" 
+    fill="#FF8C00"
+    letter-spacing="-2"
+  >96</text>
+</svg>

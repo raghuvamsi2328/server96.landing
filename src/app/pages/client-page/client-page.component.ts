@@ -37,19 +37,19 @@ export class ClientPageComponent implements OnInit {
 
       // Create dynamic descriptions for each page
       const pageDescriptions: Record<string, string> = {
-        about: `Learn about Server96, a creative digital team dedicated to delivering unique and visually stunning solutions.`,
-        work: `Explore our portfolio of digital products and web experiences that improved performance and conversion.`,
+        about: `Learn about Server96, a web engineering and cloud solutions team building resilient, scalable digital infrastructure.`,
+        work: `Explore our web engineering case studies and cloud solutions that improved reliability, performance, and growth.`,
         pricing: `Flexible engagement models for your project. From starter sprints to retained partnerships.`,
         'contact-us': `Start your project with Server96. Tell us what you are building and we'll reply with a practical scope.`,
         'privacy-policy': `Server96 privacy policy and data protection practices. We collect minimal information securely.`,
-        features: `Discover our capabilities: frontend architecture, backend development, design systems, and DevOps.`,
+        features: `Discover our capabilities: frontend architecture, backend engineering, cloud infrastructure, and DevOps.`,
         community: `Join our community. Access knowledge sharing, build walkthroughs, and collaborative sessions.`
       };
 
       this.seo.updateSeo({
         title: `${currentPage.title} | Server96`,
         description: pageDescriptions[key] || currentPage.subtitle,
-        keywords: `${key}, Server96, digital design, web services`,
+        keywords: `${key}, Server96, web engineering, cloud solutions, web services`,
         image: '/og-image.png',
         url: `https://server96.com/${key}`
       });

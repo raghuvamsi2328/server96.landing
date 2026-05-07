@@ -3,18 +3,18 @@ import { LandingPageConfig } from '../models/landing-config.model';
 export const LANDING_CONTENT: LandingPageConfig = {
   navItems: ['Home', 'About', 'Work', 'Pricing'],
   hero: {
-    eyebrow: 'We take pride in pushing creative boundaries',
-    titleLines: ['Driving digital', 'success together'],
-    highlightWord: 'together',
-    subtitle: 'Your trusted partner for all things digital. Let us transform your online presence.',
-    primaryAction: 'Contact Us',
-    secondaryAction: 'Book Meeting'
+    eyebrow: 'Web Engineering & Hosting Excellence',
+    titleLines: ['Engineering Scalable', 'Web', 'Solutions ✱ Together'],
+    highlightWord: 'Together',
+    subtitle: 'Your specialized partner for high-performance web engineering and reliable hosting. We build robust, custom web solutions designed to scale with your business.',
+    primaryAction: 'Get Started',
+    secondaryAction: 'View Our Stack'
   },
   sectionLabels: {
-    services: 'Our Services',
-    whyChoose: 'Why Choose Server96',
-    works: 'Awesome Works',
-    testimonials: 'What Our Client Says'
+    services: 'Technical Excellence In Every Layer',
+    whyChoose: 'Why Partner With Us',
+    works: 'Technical Case Studies',
+    testimonials: 'What Our Clients Say'
   },
   metrics: [
     {
@@ -35,63 +35,63 @@ export const LANDING_CONTENT: LandingPageConfig = {
   ],
   services: [
     {
-      name: 'Web Design',
+      name: 'Web Engineering',
       description:
-        'Your website is your virtual storefront, and first impressions matter. Our web design experts craft visually appealing, user-friendly, and responsive websites.',
-      tags: ['Web Design', 'UI', 'UX']
+        'We build complex, high-performance web applications using modern architectures like Micro-frontends and PWAs. Our expertise ensures scalability and maintainability.',
+      tags: ['Angular', 'TypeScript', 'Architecture']
     },
     {
-      name: 'Graphic Design',
+      name: 'Web Hosting',
       description:
-        'Stand out from the crowd with our bespoke graphic design services. From eye-catching logos to engaging marketing materials.',
-      tags: ['Brand', 'Visual', 'Print']
+        'Secure, high-uptime hosting solutions managed on enterprise-grade infrastructure to keep your business online 24/7 with dedicated support.',
+      tags: ['Cloud', 'Security', 'DevOps']
     },
     {
-      name: 'Motion Graphic',
+      name: 'Custom Web Solutions',
       description:
-        'Bring your brand to life with dynamic and attention-grabbing motion graphics for digital channels.',
-      tags: ['Motion', 'Animation', 'Story']
+        'From slot booking systems to specialized management tools, we engineer software tailored to your specific business logic and workflow requirements.',
+      tags: ['Custom', 'Business Logic', 'Integration']
     },
     {
-      name: 'Illustration',
+      name: 'Full-Stack Development',
       description:
-        'Illustrations have the power to tell stories and evoke emotions. Our illustrators create visuals that complement your brand style.',
-      tags: ['Custom Art', 'Concept', 'Creative']
+        'End-to-end development covering responsive frontend architectures and robust backend systems using Node.js, .NET, and modern frameworks.',
+      tags: ['Frontend', 'Backend', 'DevOps']
     }
   ],
   whyChooseItems: [
     {
-      title: 'Creative Excellence',
-      description: 'We take pride in pushing creative boundaries to deliver solutions that are both innovative and aesthetically pleasing.'
+      title: 'Performance First',
+      description: 'We optimize every line of code to ensure your web services are lightning-fast and SEO-friendly for maximum conversion.'
     },
     {
-      title: 'Collaborative Approach',
-      description: 'Your vision is our inspiration. We collaborate closely with you throughout the process to ensure perfect alignment.'
+      title: 'Modern Tech Stack',
+      description: 'Our expertise lies in Angular, TypeScript, Node.js, and .NET to deliver future-proof digital assets that scale with your business.'
     },
     {
-      title: 'Cutting-Edge Technology',
-      description: 'We stay ahead of industry trends and leverage modern technologies to provide future-proof solutions.'
+      title: 'Reliable Infrastructure',
+      description: 'Whether it\'s a dedicated mail server or a cloud-hosted application, we prioritize stability, security, and 99.9% uptime.'
     },
     {
-      title: 'Client Satisfaction',
-      description: 'Our success is measured by your satisfaction. We are committed to delivering projects on time and beyond expectations.'
+      title: 'Scalable Engineering',
+      description: 'We build with growth in mind, ensuring your platform can handle increased traffic and complexity as you expand your operations.'
     }
   ],
   portfolio: [
     {
-      name: 'Betley Agency',
-      category: 'Branding Design, UI/UX Design',
-      summary: 'A refined digital identity and modern landing flow for a fast-growing agency.'
+      name: 'Knowabt.me',
+      category: 'Web Hosting, Custom Platform, DevOps',
+      summary: 'A custom hosting service allowing users to deploy portfolios via GitHub with automated subdomains and serverless architecture.'
     },
     {
-      name: 'Growthy',
-      category: 'Finance, UI/UX, Website Design',
-      summary: 'High-converting product pages and clear value communication.'
+      name: 'Chats96',
+      category: 'Real-Time Chat, .NET, WebSockets',
+      summary: 'A high-concurrency chat application built with SignalR, .NET, and PostgreSQL handling thousands of concurrent connections.'
     },
     {
-      name: 'Alfinance',
-      category: 'Finance, UI/UX, App Design',
-      summary: 'A polished financial product experience built for trust and clarity.'
+      name: 'Linklocker',
+      category: 'PWA, Offline-First, Security',
+      summary: 'A self-hosted PWA designed for secure, offline-capable link management with end-to-end encryption and local storage.'
     }
   ],
   testimonials: [
@@ -129,15 +129,15 @@ export const LANDING_CONTENT: LandingPageConfig = {
     maxScope: 5
   },
   cta: {
-    title: 'Create New Innovation Together',
+    title: 'Ready to Architect Your Next Innovation',
     description:
-      'Our team of talented designers thrives on pushing the boundaries of creativity, ensuring your project stands out and makes an impact.',
-    actionText: 'Contact Us'
+      'Our team of senior engineers is ready to build the infrastructure your business deserves. Let\'s architect something stable and scalable together.',
+    actionText: 'Consult An Engineer'
   },
   footer: {
-    brandLine: 'Your trusted partner for all things digital. Let us transform your online presence.',
+    brandLine: 'Your specialized partner for high-performance web engineering and reliable hosting solutions.',
     email: 'team@server96.com',
-    phone: '+62 812 9112 4910',
+    phone: '+91 9885358039',
     groups: [
       {
         title: 'Home',
